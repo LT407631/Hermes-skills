@@ -14,14 +14,7 @@
 ## 首次部署（新电脑）
 
 ```bash
-# 先进入 Hermes 配置目录
-cd ~/.hermes
-
-# 如果有旧 skills 文件夹，先删掉（没有就跳过这步）
-rm -rf skills
-
-# 克隆技能仓库
-git clone git@github.com:LT407631/Hermes-skills.git skills
+git clone git@github.com:LT407631/Hermes-skills.git ~/.hermes/skills
 ```
 
 ## 更新技能
