@@ -1,27 +1,22 @@
 # Hermes-skills
 
-Hermes Agent 技能仓库，包含短视频运营、多智能体协作、Web UI 部署等所有自定义技能。
+## 包含技能
+
+**`devops/web-ui-pinia-refresh/`** — Web UI 前端刷新方案（v3.0）
+通过 Chrome CDP 操作 Pinia store 刷新前端页面，无需手动 F5 或重启网关。
 
 ## 首次部署（新电脑）
 
 ```bash
-# 1. 先备份现有的 skills（如果有）
 cd ~/.hermes
-mv skills skills.bak  # 或者直接 rm -rf skills
-
-# 2. 克隆仓库
+mv skills skills.bak  # 或 rm -rf skills
 git clone git@github.com:LT407631/Hermes-skills.git skills
-
-# 3. 重启 Hermes 让新技能生效
-hermes restart
-# 或手动重启 gateway
 ```
 
-## 更新技能（日常）
+## 更新技能
 
 ```bash
-cd ~/.hermes/skills
-git pull
+cd ~/.hermes/skills && git pull
 ```
 
 ## 推送本地修改（仅限主电脑）
@@ -29,15 +24,6 @@ git pull
 ```bash
 cd ~/.hermes/skills
 git add .
-git commit -m "改了啥写啥"
+git commit -m "修改内容说明"
 git push
 ```
-
-## 仓库结构
-
-- `marketing/short-video-b2b-acquisition/` — 短视频获客运营
-- `software-development/multi-agent-team-orchestration/` — 多智能体协作
-- `devops/web-ui-pinia-refresh/` — Web UI 前端刷新方案
-- `devops/hermes-web-ui-deploy/` — Hermes Web UI 部署
-- `creative/sketch/` — UI 草图设计系统
-- 其他为 Hermes 官方技能
