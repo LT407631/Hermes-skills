@@ -2,14 +2,20 @@
 
 ## 包含技能
 
-**`devops/web-ui-pinia-refresh/`** — Web UI 前端刷新方案（v3.0）
-通过 Chrome CDP 操作 Pinia store 刷新前端页面，无需手动 F5 或重启网关。
+**`multi-agent-team-orchestration/`** — Hermes 多智能体团队编排
+
+通过 Web UI 通讯指派智能体同步会话的完整方案。包括：
+- Profile 创建与进程隔离
+- 灵魂设定（SOUL.md）、知识库分区
+- 总监调度流程（小何派活给 dev/me/op）
+- 死循环防治
+- 会话同步与数据流
 
 ## 首次部署（新电脑）
 
 ```bash
 cd ~/.hermes
-mv skills skills.bak  # 或 rm -rf skills
+rm -rf skills  # 如果已有skills目录
 git clone git@github.com:LT407631/Hermes-skills.git skills
 ```
 
